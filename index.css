@@ -1,0 +1,32 @@
+body{
+
+    background-color: rgb(163, 219, 163);
+    
+}
+
+.screen{
+    grid-column: 4 span;
+}
+
+.container{
+    display: grid;
+    text-align: center;
+        background-color: rgb(178, 222, 243);
+   margin-top: 204px;  
+   margin-left: 500px;
+   width: 344px;  
+
+    padding: 20px;
+   
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(4,1fr);
+    gap:10px 10px ;
+
+}
+
+.container div{
+
+padding: 20px;
+background-color: rgb(221, 199, 220);
+
+}
