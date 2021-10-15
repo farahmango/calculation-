@@ -4,29 +4,29 @@ body{
     
 }
 
-.screen{
+.screen1{
     grid-column: 4 span;
 }
 
 .container{
     display: grid;
     text-align: center;
-        background-color: rgb(178, 222, 243);
-   margin-top: 204px;  
-   margin-left: 500px;
+    background-color: rgb(178, 222, 243);
    width: 344px;  
-
+   height: 40vh;
     padding: 20px;
-   
+    margin:  204px auto;
     grid-template-rows: repeat(5,1fr);
     grid-template-columns: repeat(4,1fr);
     gap:10px 10px ;
 
 }
 
-.container div{
+#button-color{
 
-padding: 20px;
-background-color: rgb(221, 199, 220);
+background-color: tomato;
 
+}
+.button-color1{
+    background-color: rgb(228, 228, 154);
 }

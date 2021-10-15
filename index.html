@@ -6,34 +6,41 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="container">
-       <div class="screen" style="background-color: white;">
-        </div>
-   <div > 1</div>
-   <div>2</div>
-   <div >3</div>
-   <div style="background-color: rgb(245, 245, 163);">+</div>
-   <div >4</div>
-   <div >5</div>
-   <div >6</div>
-   <div style="background-color: rgb(245, 245, 163);"">-</div>
-   <div>7</div>
-   <div >8</div>
-   <div >9</div>
-   <div style="background-color: rgb(245, 245, 163);" >*</div>
-   <div style="background-color: rgb(83, 71, 255)">c</div>
-   <div >0</div>
-   <div >=</div>
-   <div style="background-color: rgb(190, 32, 106);">/</div>
+    <form name="form1" class="container">
+    <input  class ="screen1" id="screen"  type ="text" name = "screen"> 
+    <input TYPE="button" NAME="1" VALUE="  1  " onclick="updateTextbox(1)">
+    <input TYPE="button" NAME="2" VALUE="  2  " onclick="updateTextbox(2)">
+    <input TYPE="button" NAME="3" VALUE="  3  " onclick="updateTextbox(3)">
+    <input class="button-color1" TYPE="button" NAME="+" VALUE="  +  " onclick="updateTextbox('+')">
+    <input TYPE="button" NAME="4" VALUE="  4  " onclick="updateTextbox(4)">
+    <input TYPE="button" NAME="5" VALUE="  5  " onclick="updateTextbox(5)">
+    <input TYPE="button" NAME="6" VALUE="  6  " onclick="updateTextbox(6)">
+    <input class="button-color1" TYPE="button" NAME="-" VALUE="  -  " onclick="updateTextbox('-')">
+    <input TYPE="button" NAME="7" VALUE="  7  " onclick="updateTextbox(7)">
+    <input TYPE="button" NAME="8" VALUE="  8  " onclick="updateTextbox(8)">
+    <input TYPE="button" NAME="9" VALUE="  9  " onclick="updateTextbox(9)">
+    <input class="button-color1" TYPE="button" NAME="*" VALUE="  *  " onclick="updateTextbox('*')">
+    <input id="button-color" TYPE="button" NAME="c" VALUE="  c  " onclick="reset()">
+    <input TYPE="button" NAME="0" VALUE="  0  " onclick="updateTextbox('0')">
+    <input class="button-color1" TYPE="button" NAME="=" VALUE="  =  " onclick="result()">
+    <input class="button-color1" class="button-color1" TYPE="button" NAME="/" VALUE="  /  " onclick="updateTextbox('/')">
 
 
-
-
-
-
-    </div>
+    </form>
     
+<script>
 
+function updateTextbox(value){
+document.getElementById("screen").value += value;
+}
+function result(){
+document.getElementById("screen").value = eval(document.getElementById("screen").value);
+	}
+function reset(){
+document.getElementById("screen").value = '';
+	}
+
+</script>
 
 </body>
 </html>
